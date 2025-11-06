@@ -1,0 +1,70 @@
+# -------------------------
+# Python & FastAPI Projects
+# -------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables
+*.env
+
+# macOS / Windows files
+.DS_Store
+Thumbs.db
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# Logs & cache
+*.log
+*.pid
+*.seed
+*.out
+*.bak
+*.swp
+.cache/
+.pytest_cache/
+coverage/
+htmlcov/
+dist/
+build/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Local database / vector DB files
+chroma/
+*.sqlite3
+*.db
+
+# Temporary or test data
+tmp/
+temp/
+test_data/
+faq_data/embeddings_cache/
+
+# Node / frontend (if you later add npm support)
+node_modules/
+
+# Uvicorn & FastAPI related
+*.pid
+*.sock
+
+# OS specific
+ehthumbs.db
+Icon?

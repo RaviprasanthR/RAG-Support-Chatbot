@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Punch Support Assistant</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      height: 100vh;
+    }
+
+    #chat-icon {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #22c55e;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    #chat-container {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      bottom: 100px;
+      right: 25px;
+      width: 350px;
+      height: 480px;
+      background-color: #1e293b;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background-color: #22c55e;
+      color: #fff;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .chat-box {
+      flex-grow: 1;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .input-box {
+      display: flex;
+      border-top: 1px solid #334155;
+      padding: 6px;
+      background-color: #0f172a;
+    }
+
+    .input-box input {
+      flex: 1;
+      padding: 6px 8px;
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .input-box button {
+      background-color: #22c55e;
+      border: none;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 6px;
+      font-size: 14px;
+    }
+
+    .message {
+      padding: 8px 12px;
+      border-radius: 8px;
+      max-width: 80%;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      line-height: 1.4;
+    }
+
+    .user-message {
+      background-color: #3b82f6;
+      align-self: flex-end;
+    }
+
+    .bot-message {
+      background-color: #334155;
+      align-self: flex-start;
+    }
+
+    .typing {
+      background-color: #334155;
+      font-style: italic;
+      opacity: 0.8;
+      align-self: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-icon">💬</div>
+
+  <div id="chat-container">
+    <div class="chat-header">Punch Support Assistant</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-box">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatIcon = document.getElementById("chat-icon");
+    const chatContainer = document.getElementById("chat-container");
+    const chatBox = document.getElementById("chat-box");
+    const userInput = document.getElementById("user-input");
+    const sendBtn = document.getElementById("send-btn");
+
+    let sessionId = "user";
+
+    // Toggle chat window
+    chatIcon.addEventListener("click", async () => {
+      chatContainer.style.display = chatContainer.style.display === "flex" ? "none" : "flex";
+
+      if (chatContainer.style.display === "flex") {
+        chatBox.innerHTML = "";
+        showTyping();
+        try {
+          const res = await fetch("http://127.0.0.1:8000/welcome");
+          const data = await res.json();
+          removeTyping();
+          data.messages.forEach(msg => addMessage(msg, "bot"));
+        } catch {
+          removeTyping();
+          addMessage("Welcome to Punch Support Assistant!", "bot");
+        }
+      }
+    });
+
+    // Typing animation
+    function showTyping() {
+      const typingEl = document.createElement("div");
+      typingEl.classList.add("message", "typing");
+      typingEl.id = "typing";
+      typingEl.textContent = "Typing...";
+      chatBox.appendChild(typingEl);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function removeTyping() {
+      const typingEl = document.getElementById("typing");
+      if (typingEl) typingEl.remove();
+    }
+
+    // Add message to chat
+    function addMessage(text, sender) {
+      const msgEl = document.createElement("div");
+      msgEl.classList.add("message", sender === "user" ? "user-message" : "bot-message");
+      msgEl.textContent = text;
+      chatBox.appendChild(msgEl);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Send message (click or Enter)
+    sendBtn.addEventListener("click", sendMessage);
+    userInput.addEventListener("keypress", e => {
+      if (e.key === "Enter") sendMessage();
+    });
+
+    async function sendMessage() {
+      const message = userInput.value.trim();
+      if (!message) return;
+
+      addMessage(message, "user");
+      userInput.value = "";
+      showTyping();
+
+      try {
+        const res = await fetch("http://127.0.0.1:8000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ session_id: sessionId, query: message })
+        });
+
+        if (!res.ok) throw new Error("Network error");
+        const data = await res.json();
+        removeTyping();
+
+        //  If backend sends split messages
+        if (Array.isArray(data.messages)) {
+          data.messages.forEach(msg => addMessage(msg, "bot"));
+        } else {
+          addMessage(data.answer, "bot");
+        }
+      } catch (error) {
+        removeTyping();
+        addMessage("Something went wrong. Please try again.", "bot");
+      }
+    }
+  </script>
+</body>
+</html>

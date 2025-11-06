@@ -1,0 +1,153 @@
+[
+  {
+    "section": "Single Screen Trading",
+    "type": "info",
+    "text": "Punch pioneered single-screen trading in India, designed for serious traders who need speed, control, and professional tools right on mobile. With advanced option data, quick-access panes, and smooth gesture navigation, you can manage every part of your trade without switching screens. For fast option scalping, Punch lets you view two charts side-by-side. Analyse, track price action, and trade across both charts together — bringing the power of desktop multi-charting straight to your phone."
+  },
+  {
+    "section": "Navigation",
+    "type": "info",
+    "text": "Trade: Charts are the central hub on Punch. You can not only trade directly from them but also manage everything in one place — your positions, orderbook, and P&L. Add, modify, or exit trades right from the chart. Navigation: The bottom panel is your control center. Track orders and positions side by side, switch to scalper mode with Split View, and use Jump To for everything else — advanced option data, option chain, funds, watchlists, and support."
+  },
+  {
+    "section": "Quick Access Panes",
+    "type": "info",
+    "text": "Punch is built with traders in mind — an execution-first platform designed for serious traders and scalpers. To support this, we’ve developed quick-access panes that let you track active positions and orders instantly, while also enabling advanced technical analysis right on your chart. Indicator Panes - Punch offers 60+ standard indicators, custom indicators developed by expert traders and influencers and drawing tools like trend line, horizontal lines and Fibonacci retracements."
+  },
+  {
+    "section": "Gestures",
+    "type": "info",
+    "text": "To change or input values, you can do so either by scrolling or manually entering it. Simple scroll or type to set lot size, SL values or limit, trigger orders."
+  },
+  {
+    "section": "Widgets",
+    "type": "info",
+    "text": "Widgets are your technical command centre, storing key data for entering, exiting, or managing your options trades. They also offer the flexibility to customise the data visuals to match your style. New widgets are added on an ongoing basis. Current options include OI, OI change, PCR, VIX, and top-traded strikes, among others."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "Where can I download the Punch app?",
+    "text": "You can download the latest version of Punch for free from the Google Play Store."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "Is Punch available on both Android and iOS?",
+    "text": "Not yet! Currently, Punch is only available on Android and can be downloaded from the Google Play Store."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "Is Punch available on desktop, laptop, PC, or Mac?",
+    "text": "No. Punch is exclusively designed for mobile only to empower on-the-go traders with fast, efficient trading directly from your smartphone."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "Where can I get a Punch APK?",
+    "text": "Punch does not provide APKs, APIs, or EXEs. Please download the app directly from official platforms to ensure secure and reliable trading."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "Can Punch be linked with any other broker?",
+    "text": "You cannot link other demat accounts to Punch. As a SEBI-registered broker, Punch requires you to open a demat and trading account with us to start trading."
+  },
+  {
+    "section": "Downloading Punch App",
+    "type": "faq",
+    "question": "How safe is it to trade with Punch?",
+    "text": "Punch is a SEBI-registered broker (NSE: 90253; BSE: 6845; SEBI: INZ000300936) with over 8 years of experience, originating from Market Pulse, known for its charting and analysis tools used by 500,000 traders monthly. Our platform ensures swift trade execution to the exchange in just 0.011 seconds, maintaining a 98.5% crash-free rate. Check our live reliability report at https://status.punch.trade/."
+  },
+  {
+	"section": "Investments on Punch",
+	"type": "faq",
+	"question": "investments on punch",
+	"text": "Punch lets you trade across NSE & BSE — including index options, stock options, and equities. Punch currently does not support:Futures trading, Commodities trading, Crypto trading, Mutual funds, Debt, ETFs, or Index funds."
+  },
+  {
+	"section": "Investments on Punch",
+	"type": "faq",
+	"question": "Are stock options available on punch?",
+	"text": "Yes, punch offers all NSE stocks for options and equity trading"
+  },
+  {
+	"section": "Investments on Punch",
+	"type": "faq",
+	"question": "Can I invest and do cash intraday trades on Punch?",
+	"text": "Yes, on Punch you can invest and trade on all NSE stocks. "
+  },
+  {
+	"section": "Investments on Punch",
+	"type": "faq",
+	"question": "Can I trade in both NSE and BSE options on Punch?",
+	"text": "Punch supports options trading on NSE & BSE — across indices and stocks."
+  },
+  {
+	"section": "Investments on Punch",
+	"type": "faq",
+	"question": "Can we trade in commodity options on Punch?",
+	"text": "Trading in commodity options is not available on Punch. Our current focus is on NSE and BSE options and hence there are no plans to introduce commodity trading in the near future."
+  },
+  {
+	"section": "Opening an Account",
+	"type": "faq",
+	"question": "What is a DEMAT account?",
+	"text": "Demat Account is a digital vault that holds shares and securities in electronic format.A demat account is an electronic account that holds securities like stocks, bonds, mutual funds, and exchange-traded funds (ETFs) in digital form. You need an active trading and demat account to trade options on Punch."
+  },
+  {
+	"section": "Opening an Account",
+	"type": "faq",
+	"question": "Why do I need an F&O trading account with Punch?",
+	"text": "Punch lets you trade both stocks and F&O (NSE & BSE) — but to trade options, you’ll need an F&O-enabled account.Just open your DEMAT account on Punch — it takes under 5 minutes. Upload your income proof to activate F&O trading, and you’re all set to trade options."
+  },
+  {
+	"section": "Opening an Account",
+	"type": "faq",
+	"question": "What documents do I need to open an account with Punch?",
+	"text": "To open an account with Punch, you'll need your Aadhaar number, linked phone number, PAN card, and income proof documents like bank statements or salary slips.Your Aadhaar number and the phone number linked to it.Additional documents like PAN card, if not available on DIGILOCKER.For income proof, you may need a Bank or DP statement, or alternate documents like salary slips, Form 16B, or an ITR acknowledgement."
+  },
+  {
+	"section": "Opening an Account",
+	"type": "faq",
+	"question": "How long does it take to open an account with Punch?",
+	"text": "You can open an account on Punch in under 5 minutes.Once done, your application is sent to the exchange for approval — this usually takes up to 24 hours.Delays can happen due to:KRA agency response time,Exchange approvals,Weekends (processing is paused),Incorrect document submissions. Need help? Call us at +91 79410 57311 Or email us at writetous@punch.trade"
+  },
+  {
+	"section": "Opening an Account",
+	"type": "faq",
+	"question": "What are the charges for opening an account with Punch?",
+	"text": "We charge a fixed fee of Rs 200 for opening a Demat account. We charge a brokerage fee of Rs. 1 per executed order, along with any applicable transaction or statutory charges levied by the exchange."
+  },
+  {
+  "section": "Exploring Product and Features",
+  "type": "faq",
+  "question": "How to Trade Options on Punch",
+  "answer": "Options trading on Punch: Trade options with direct access to strike prices and real-time call/put data. Simple scrolling adjusts lots, and a tap executes trades swiftly.\n\nTrade via Chart - Strike Lines:\n• Your option strike prices are visible on the right side of your screen.\n• Tap a price to plot the strike line. It appears instantly on your spot chart.\n• You can plot multiple strikes, pan the chart to view different strikes, and see real-time spot prices for indices and LTP for stocks in the purple pointer box on the right.\n\nChecking Call and Put Prices:\n• For each plotted strike, real-time Call (yellow) and Put (blue) prices appear on the left, placed on the strike line.\n\nPlacing a Buy or Sell Order:\n• Options traders on Punch have a unique order form experience. Tap on Call or Put for the chosen strike price to open the order form.\n• Use the lot size scroll quantity.\n• Switch to select a Buy order or Sell order.\n\nChanging Lot Size:\n• Adjust your lot size by simply scrolling the lot size values up or down or using the type function to set your desired lot size.\n\nPunching an Order:\n• After setting up your order, tap the green button at the bottom to Punch the trade. Use the switch to take a sell order.\n\nTrade via Option Chain:\n• On Punch you can trade via option chain as well, accessible via the Jump To menu of the particular scrip.\n• Tap on Jump To.\n• Toggle the OI/Price view and then tap on Call or Put price."
+  },
+  {
+  "section": "Exploring Product and Features",
+  "type": "info",
+  "question": "Customisable widgets",
+  "text": "Explore customisable widgets on Punch to get real-time updates on options data like OI, VIX, PCR, and top traded strikes, all set to your trading needs.\n\nWidgets on Punch provide key options data directly from NSE.\n\nOur widget tab includes real-time updates on OI, OI change, top traded strikes, VIX, PCR, among other data.\n\nEach widget offers different visualisations. Set your preferred view as the default and change it whenever needed.\n\nAccess widgets by swiping in from the top right corner and close them with the 'X' button at the bottom."
+  },
+  {
+  "section": "Exploring Product and Features",
+  "type": "info",
+  "question": "Scrip Selection",
+  "text": "Switch scrips with a tap, and scroll to access various charts. Punch offers all NSE indices and stock options with NIFTY as the default — including BANKNIFTY, FINNIFTY, and MIDCAPNIFTY, as well as NSE stock options.\n\nThe default scrip upon opening the app for the first time is NIFTY.\n\nTo switch scrips, tap the switch icon at the bottom-centre of the screen → choose between Index and Stocks → scroll right to left on the carousel to view all the available scrips → tap on a scrip to view its chart."
+  },
+  {
+	"section": "Charges",
+	"type": "faq",
+	"question": "Does Punch charge any account opening fees?",
+	"text": "Yes, we charge a fixed fee of rupees 200 for opening a demat account"
+  },
+  {
+  "section": "Charges",
+  "type": "faq",
+  "question": "What are the brokerage charges on Punch?",
+  "text": "F&O (Options & Futures): ₹1 per executed order\n\nEquity (Intraday & Delivery): ₹1 or 0.10% (whichever is lower) per executed order.\n\nIn addition to brokerage, mandatory regulatory charges apply:\n\nSEBI fees, exchange turnover charges, IPFT, STT, stamp duty, and 18% GST."
+  }
+]
