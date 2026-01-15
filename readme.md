@@ -24,7 +24,7 @@ The chatbot uses:
 
 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/punch-chatbot-poc.git
+git clone https://github.com/RaviprasanthR/RAG-Support-Chatbot.git
 cd punch-chatbot-poc
 
 2️⃣ Create and Activate a Virtual Environment
